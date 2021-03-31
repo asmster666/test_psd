@@ -1,0 +1,47 @@
+.partners {
+    display: flex;
+    flex-direction: column;
+}
+.partners_wrap {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+button {
+    background-color: #00D36D;
+    color: white;
+    border: transparent;
+    border-radius: 8px;
+}
+
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    button {
+        font-size: 21px;
+        width: 15%;
+        margin: 0 auto;
+        padding: 0.5rem; 
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    button {
+        font-size: 18px;
+        width: 25%;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .partners_wrap {
+        flex-direction: column;
+    }
+    button {
+        font-size: 14px;
+        width: 35%;
+        margin: 0 auto;
+        padding: 0.5rem;
+    }
+}

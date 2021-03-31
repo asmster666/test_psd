@@ -1,0 +1,55 @@
+.sales {
+    display: flex;
+    flex-direction: column;
+}
+.sales h1 {
+    text-align: center;
+}
+.sales_wrap {
+    display: flex; 
+}
+button {
+    background-color: #00D36D;
+    color: white;
+    border: transparent;
+    border-radius: 8px;
+}
+
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    .sales_wrap {
+        width: 60%;
+        margin: 0 auto;
+    }
+    button {
+        width: 20%;
+        font-size: 25px;
+        margin-top: 3rem;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .sales_wrap {
+        margin: 0 auto;
+    }
+    button {
+        width: 30%;
+        font-size: 23px;
+        margin-top: 3rem;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .sales_wrap {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    button {
+        width: 55%;
+        font-size: 21px;
+        margin-top: 2rem;
+        padding: 0.5rem;
+    }
+}

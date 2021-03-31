@@ -1,0 +1,283 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.footer_up, .footer_center, .footer_down {
+    width: 80%;
+    margin: 0 auto;
+}
+.footer_up {
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+}
+.part900 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.part900_text1 {
+    font-weight: bold;
+    margin-top: 0
+}
+.part900_text2 {
+    color: rgb(0, 0, 0, 0.5);
+}
+.footer_links {
+    justify-content: flex-end;
+}
+.footer_links a {
+    text-decoration: none;
+    color: black;
+}
+.footer_center {
+    display: flex;
+    justify-content: space-evenly;
+}
+.sber {
+    background-image: url("../../assets/img/sberlogo.png");
+    background-position: center;
+    background-size: cover;
+}
+.center_center {
+    display: flex;
+    justify-content: space-evenly;
+}
+.google_play, .app_store {
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.google_play {
+    background-image: url("../../assets/img/google-play.png");
+}
+.app_store {
+    background-image: url("../../assets/img/app-store.png");
+}
+.center_left {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+.ok, .fb, .vk, .insta {
+    border-radius: 8px;
+    background-position: center;
+    background-size: cover;
+}
+.ok {
+    background-image: url("../../assets/icons/ok.png");
+}
+.fb {
+    background-image: url("../../assets/icons/fb.png");
+}
+.vk {
+    background-image: url("../../assets/icons/vk.png");
+}
+.insta {
+    background-image: url("../../assets/icons/inst.png");
+}
+.footer_down {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 0;
+    color: rgb(0, 0, 0, 0.5);
+}
+.down_text_left {
+    width: 20%;
+}
+.down_text_right {
+    width: 70%;
+}
+
+ 
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    .footer {
+        width: 1366px;
+        height: 15rem;
+        box-sizing: border-box;
+    }
+    .footer_up {
+        height: 50%;
+    }
+    .part900 {
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 30%;
+    }
+    .part900_text1 {
+        font-size: 36px;
+    }
+    .part900_text2 {
+        margin-top: -1.5rem;
+        font-size: 24px;
+    }
+    .footer_links {
+        margin-left: 2rem;
+        margin-top: 1rem;
+        width: 70%; 
+    }
+    .footer_links a {
+        font-size: 18px;
+        margin: 1rem;
+    }
+    .footer_center {
+        margin-top: 0.5rem;
+    }
+    .sber {
+        width: 130px;
+        height: 30px;
+        margin-left: -8rem;
+    }
+    .center_center {
+        width: 38%;
+    }
+    .google_play, .app_store {
+        width: 130px;
+        height: 30px;
+    }
+    .center_left {
+        margin-right: -5rem;
+    }
+    .ok, .fb, .vk, .insta {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
+    }
+    .footer_down {
+        height: 2rem;
+        margin-top: 2rem;
+        font-size: 12px;
+    }
+    .down_text_left {
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .footer {
+        width: 768px;
+        height: 15rem;
+        box-sizing: border-box;
+    }
+    .footer_up {
+        height: 50%;
+        margin-top: 1rem;
+    }
+    .part900 {
+        margin-left: 1rem;
+        width: 30%;
+    }
+    .part900_text1 {
+        font-size: 32px;
+    }
+    .part900_text2 {
+        margin-top: -1.5rem;
+        font-size: 12px;
+    }
+    .footer_links {
+        margin-left: 2rem;
+        width: 65%; 
+        height: 70%;
+    }
+    .footer_links a {
+        font-size: 11px;
+        margin: 0.6rem;
+    }
+    .footer_center {
+        margin-top: 0.5rem;
+    }
+    .sber {
+        width: 100px;
+        height: 25px;
+        margin-left: -2rem;
+    }
+    .center_center {
+        width: 38%;
+    }
+    .google_play, .app_store {
+        width: 90px;
+        height: 25px;
+    }
+    .center_left {
+        margin-right: -5rem;
+    }
+    .ok, .fb, .vk, .insta {
+        width: 15px;
+        height: 15px;
+        margin-right: 0.5rem;
+    }
+    .footer_down {
+        height: 2rem;
+        margin-top: 2rem;
+        font-size: 10px;
+    }
+    .down_text_left {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .footer {
+        width: 414px;
+        height: 8rem;
+        box-sizing: border-box;
+    }
+    .footer_up {
+        height: 30%;
+    }
+    .part900 {
+        margin-left: -1rem;
+        width: 30%;
+    }
+    .part900_text1 {
+        font-size: 24px;
+    }
+    .part900_text2 {
+        margin-top: -1.5rem;
+        font-size: 10px;
+    }
+    .footer_links {
+        margin-left: 1rem;
+        width: 70%; 
+        margin-top: -0.5rem;
+    }
+    .footer_links a {
+        font-size: 9px;
+        margin: 0 0.3rem 0 0;
+    }
+    .footer_center {
+        margin-top: 2.5rem;
+    }
+    .sber {
+        width: 60px;
+        height: 15px;
+        margin-left: -4rem;
+    }
+    .center_center {
+        width: 38%;
+    }
+    .google_play, .app_store {
+        width: 60px;
+        height: 15px;
+    }
+    .center_left {
+        margin-right: -5rem;
+    }
+    .ok, .fb, .vk, .insta {
+        width: 15px;
+        height: 15px;
+        margin-right: 0.5rem;
+    }
+    .footer_down {
+        height: 2rem;
+        width: 90%;
+        font-size: 6px;
+        margin-top: 0.5rem;
+    }
+    .down_text_left {
+        margin-left: 1rem;
+    }
+}

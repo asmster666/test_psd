@@ -1,0 +1,125 @@
+.info_field {
+    display: flex;
+    flex-direction: column;
+}
+.info_pic {
+    width: 100%;
+    background-image: url("../../../assets/img/action.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+.info_links {
+    display: flex;
+    flex-direction: column;
+}
+.info_links a {
+    color: #00D36D;
+}
+.span2 {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    .info_field {
+        width: 100%;
+    }
+    .info_pic {
+        height: 600px;
+    }
+    .info_date {
+        font-size: 18px;
+        margin: 1rem auto;
+    }
+    .ul_name, .ol_name {
+        margin-left: -2rem;
+        font-size: 16px;
+    }
+    li {
+        font-size: 16px;
+    }
+    .info_links {
+        margin-bottom: 1rem;
+        margin-left: 2rem;
+    }
+    .info_links a {
+        margin-top: 1rem;
+    }
+    .span1 {
+        font-size: 14px;
+        margin-left: 2rem;
+    }
+    .span1, .span2 {
+        width: 95%;
+        padding-left: 0.5rem;
+    }
+    .span2 {
+        font-size: 10px;
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .info_field {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .info_pic {
+        height: 400px;
+    }
+    .info_date {
+        font-size: 18px;
+        margin: 1rem auto;
+    }
+    .ul_name, .ol_name {
+        margin-left: -2rem;
+    }
+    .info_links {
+        margin-bottom: 1rem;
+    }
+    .info_links a {
+        margin-top: 1rem;
+    }
+    .span2 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .info_field {
+        width: 100%;
+    }
+    .info_pic {
+        height: 200px;
+    }
+    .info_date {
+        font-size: 18px;
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .ul_name, .ol_name {
+        margin-left: -2rem;
+        font-size: 16px;
+    }
+    li {
+        font-size: 16px;
+    }
+    .info_links {
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .info_links a {
+        margin-top: 1rem;
+    }
+    .span1 {
+        font-size: 14px;
+    }
+    .span1, .span2 {
+        width: 95%;
+        padding-left: 0.5rem;
+    }
+    .span2 {
+        font-size: 8px;
+    }
+}

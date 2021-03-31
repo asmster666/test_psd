@@ -1,0 +1,85 @@
+.section3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.section3_wrap {
+    display: flex;
+    border-radius: 90px;
+    justify-content: space-evenly; 
+    align-items: center;
+    background-color: white;
+}
+.item {
+    background-image: url("../../../assets/img/colls8.png");
+    background-position: center;
+    background-size: cover;
+}
+.section3_name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 20px solid white;
+    background-color: white;
+}
+
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    .section3_wrap {
+        width: 500px;
+        height: 150px;
+    }
+    .section3_first, .section3_second, .section3_third {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    .section3_name {
+        width: 180px;
+        margin-left: 9rem;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .section3_wrap {
+        width: 500px;
+        height: 150px;
+    }
+    .section3_first, .section3_second, .section3_third {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    .section3_name {
+        width: 180px;
+        margin-left: 9rem;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .section3_wrap {
+        width: 300px;
+        height: 75px;
+    }
+    .section3_first, .section3_second, .section3_third {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        border: 1px solid black;
+    }
+    .section3_name {
+        width: 100px;
+        margin-left: 5.5rem;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        font-size: 14px;
+    }
+}
