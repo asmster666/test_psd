@@ -1,0 +1,229 @@
+.categories {
+    display: flex;
+    flex-direction: column;
+}
+.categories_wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.categoires_up, .categoires_down {
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+}
+#active {
+    color: white;
+    background-color: #00D36D;
+    border: transparent;
+}
+.categories_btn {
+    background-color: white;
+    color: black;
+}
+.toggle {
+    display: flex;
+}
+.toggle_2 {
+    color: #00D36D;
+}
+.toggle_btn {
+    position: relative;
+    display: inline-block;
+    width: 70px;
+    height: 30px;
+} 
+.toggle_btn input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+} 
+.slider {
+    position: absolute;
+    cursor: pointer;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+} 
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 50px;
+    background-color: white;
+    transition: .4s;
+} 
+input:checked + .slider {
+    background-color: #00D36D;
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px #00D36D;
+}
+  
+input:checked + .slider:before {
+    transform: translateX(25px);
+}
+
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    .categoires_up, .categoires_down {
+        height: 10%;
+        text-align: center;
+    }
+    .categoires_up {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .categoires_down {
+        margin-left: 3rem;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .categoires_down .category{
+        width: 23%;
+    }
+    .category {
+        background-color: white;
+        height: 1.5rem;
+        padding: 0.5rem;
+        width: 12%;
+        font-size: 12px;
+        margin: 0.5rem;
+    }
+    #active {
+        color: white;
+        background-color: #00D36D;
+    }
+    .categories_btn {
+        width: 20%;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .toggle_2, .toggle_1 {
+        font-size: 21px;
+    }
+    .toggle {
+        width: 30%;
+        margin: 3rem auto;
+    }
+    .toggle_btn {
+        margin-right: 4rem;
+        margin-left: 2rem;
+    }
+    .slider:before {
+        top: 2px;
+        left: -3px;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .categoires_up, .categoires_down {
+        height: 10%;
+        text-align: center;
+    }
+    .categoires_up {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .categoires_down {
+        margin-left: 3rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .categoires_down .category{
+        width: 23%;
+    }
+    .category {
+        background-color: white;
+        height: 1.5rem;
+        padding: 0.5rem;
+        width: 12%;
+        font-size: 10px;
+        margin: 0.5rem;
+    }
+    #active {
+        color: white;
+        background-color: #00D36D;
+    }
+    .categories_btn {
+        width: 20%;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .toggle_1, .toggle_2 {
+        font-size: 18px;
+    }
+    .toggle {
+        width: 50%;
+        margin: 2rem auto;
+    }
+    .toggle_btn {
+        margin-right: 3rem;
+        margin-left: 2rem;
+    }
+    .slider:before {
+        top: 2px;
+        left: -3px;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .categories_wrap {
+        flex-direction: row;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .categoires_up, .categoires_down {
+        height: 10%;
+        text-align: center;
+        flex-direction: column;
+    }
+    .categoires_up {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .categoires_down {
+        margin-left: 3rem;
+        width: 78%;
+        margin: 3.5rem auto;
+    }
+    .categoires_down .category{
+        width: 68%;
+    }
+    .category {
+        background-color: white;
+        height: 1.5rem;
+        padding: 0.5rem;
+        width: 62%;
+        font-size: 10px;
+        margin: 0.5rem;
+    }
+    #active {
+        color: white;
+        background-color: #00D36D;
+        font-size: 8px;
+    }
+    .categories_btn {
+        width: 68%;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+    .toggle {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .toggle_btn {
+        margin-right: 2rem;
+        margin-left: 2rem;
+    }
+    .slider:before {
+        top: 2px;
+        left: -5px;
+    }
+}

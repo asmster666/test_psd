@@ -10,7 +10,9 @@ export default class Section3 extends Component {
                     <div className="section3_second item"></div>
                     <div className="section3_third item"></div>
                 </div>
-                <div className="section3_name">Большой % начисления</div>
+                <div className="section3_name">
+                    <div className="section3_name_text">Большой % начисления</div>
+                </div>
             </section>  
         )  
     }

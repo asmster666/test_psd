@@ -128,9 +128,11 @@
     }
     .search {
         margin-bottom: 1rem; 
+        height: 20px;
     }
     .search button {
         font-size: 16px;
+        margin-top: -0.2rem;
     }
     .search_icon {
         width: 20px;
@@ -181,7 +183,13 @@
         height: 20px;
     }
     .search {
-        margin-bottom: 0.5rem; 
+        margin-bottom: 1rem; 
+        height: 20px;
+        margin-left: 0.4rem;
+    }
+    .search button {
+        font-size: 16px;
+        margin-top: 0.2rem;
     }
     .search_icon {
         width: 15px;

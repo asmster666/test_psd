@@ -3,3 +3,36 @@
     flex-direction: column;
     
 }
+.list_section3_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    .list {
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .list {
+        width: 70%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .list {
+        width: 90%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
+    .list_section3_wrapper {
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+} 
