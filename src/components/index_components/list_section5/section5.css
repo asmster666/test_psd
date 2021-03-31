@@ -10,8 +10,22 @@
     align-items: center;
     background-color: white;
 }
-.item2 {
+.section5_first {
+    background-image: url("../../../assets/img/colls12.png");
+}
+.section5_second {
     background-image: url("../../../assets/img/colls13.png");
+}
+.section5_third {
+    background-image: url("../../../assets/img/colls14.png");
+}
+.section5_four {
+    background-image: url("../../../assets/img/colls15.png");
+}
+.section5_five {
+    background-image: url("../../../assets/img/colls16.png");
+}
+.item2 {
     background-position: center;
     background-size: cover;
 }

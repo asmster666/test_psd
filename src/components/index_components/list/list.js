@@ -10,7 +10,7 @@ export default class List extends Component {
             <section className="list">
                 <Section5/>
                 <div className="list_section3_wrapper">
-                    <Section3/>
+                    <Section3 trigger={true} number={1.5}/>
                     <Section3/>
                 </div> 
                 <Section5/>
