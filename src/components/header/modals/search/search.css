@@ -1,0 +1,53 @@
+.sign_search {
+    background-image: url("../../../../assets/icons/search.png");
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------- responsive design ---------- */
+@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+    .search_label {
+        height: 2rem;
+        position: absolute;
+        z-index: 1;
+    }
+    .sign_search {
+        height: 1rem;
+        width: 1rem;
+        margin-top: 0.1rem;
+        position: absolute;
+        margin-left: 8rem;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+    .search_label {
+        height: 1.5rem;
+        position: absolute;
+        z-index: 1;
+    }
+    .sign_search {
+        height: 1rem;
+        width: 1rem;
+        margin-top: 0.1rem;
+        position: absolute;
+        margin-left: 8rem;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+    .search_label {
+        height: 1rem;
+        position: absolute;
+        z-index: 1;
+    }
+    .sign_search {
+        height: 1rem;
+        width: 1rem;
+        position: absolute;
+        margin-left: 8rem;
+        z-index: 2;
+    }
+}
