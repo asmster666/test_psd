@@ -79,7 +79,7 @@
     background-position: center;
     background-size: cover;
 }
-.modal_geo , .modal_search {
+#modal_geo , #modal_search {
     display: none;
 }
 

@@ -1,8 +1,16 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {get_sales} from '../../../actions';
 
 import './sale_item.css';
 
-export default class SaleItem extends Component {
+class SaleItem extends Component {
+
+    componentDidMount() {
+        //let serverResponse = {...some data}
+        //this.props.get_sales(serverResponse);
+    }
+
     render() {
         return (
             <section className="sale_item">
@@ -18,3 +26,11 @@ export default class SaleItem extends Component {
         )  
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        sales: state.sales
+    }
+};
+
+export default connect(mapStateToProps, {get_sales})(SaleItem);

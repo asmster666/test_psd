@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {get_partners} from '../../../actions';
 import './partner_item.css';
 
-export default class PartnerItem extends Component {
+class PartnerItem extends Component {
+
+    componentDidMount() {
+        //let serverResponse = {...some data}
+        //this.props.get_partners(serverResponse);
+    }
+
     render() {
         return (
             <section className="partner_item">
@@ -13,3 +21,11 @@ export default class PartnerItem extends Component {
         )  
     }
 }  
+
+const mapStateToProps = (state) => {
+    return {
+        partners: state.partners
+    }
+};
+
+export default connect(mapStateToProps, {get_partners})(PartnerItem);

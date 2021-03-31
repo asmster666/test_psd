@@ -4,9 +4,15 @@ import {SearchModal} from './modals/search/search_modal';
 import './header.css';
 
 export default class Header extends Component {
+
+    showModal = (elem) => {
+        let modal = document.getElementById(`${elem}`);
+        modal.style.display = "block";
+    }
+
     render() {
         return (
-            <section className="header">
+            <section className="header"> 
                 <section className="right">
                     <div id="img"></div>
                 </section>
@@ -30,18 +36,18 @@ export default class Header extends Component {
                 </section>
                 <section className="left">
                     <div className="location">
-                        <div className="geo"></div>
+                        <div className="geo" onClick={() => this.showModal("modal_geo")}></div>
                         <span>Санкт-Петербург</span>
                     </div>
                     <div className="search">
-                        <div className="search_icon"></div>
+                        <div className="search_icon" onClick={() => this.showModal("modal_search")}></div>
                         <button>Войти</button>
                     </div>
                 </section>
-                <section className="modal_geo">
+                <section id="modal_geo">
                     <GeoModal />
                 </section>
-                <section className="modal_search">
+                <section id="modal_search">
                     <SearchModal />
                 </section>
                 <section className="links_none">

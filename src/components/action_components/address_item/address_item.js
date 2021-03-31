@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {get_addresses} from '../../../actions';
+
 import './address_item.css';
 
-export default class AddressItem extends Component {
+class AddressItem extends Component {
+
+    componentDidMount() {
+        //let serverResponse = {...some data}
+        //this.props.get_addresses(serverResponse);
+    }
+
     render() {
         return (
             <section className="address_item">
@@ -28,4 +37,12 @@ export default class AddressItem extends Component {
             </section> 
         )  
     }
-}    
+};
+
+const mapStateToProps = (state) => {
+    return {
+        addresses: state.addresses
+    }
+};
+
+export default connect(mapStateToProps, {get_addresses})(AddressItem);

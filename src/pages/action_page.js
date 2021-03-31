@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { withRouter } from "react-router-dom";
 import Footer from '../components/footer';
 import Header from '../components/header';
 import InfoField from '../components/action_components/info_field';
@@ -6,7 +7,7 @@ import MapField from '../components/action_components/map';
 
 import './styles.css';
 
-export default class ActionPage extends Component {
+class ActionPage extends Component {
     render() {
         return (
             <section className="action_page">
@@ -24,3 +25,5 @@ export default class ActionPage extends Component {
         ) 
     }
 }
+
+export default withRouter(ActionPage);
