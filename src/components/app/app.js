@@ -8,7 +8,7 @@ export default class App extends Component {
             <Router>
                 <section className="app">
                     <Switch>
-                        <Route path="/index" exact component={IndexPage}></Route>
+                        <Route path="/" exact component={IndexPage}></Route>
                         <Route path="/action" exact component={ActionPage}></Route>
                     </Switch>
                 </section>
