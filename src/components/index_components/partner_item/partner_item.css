@@ -19,7 +19,31 @@
 }
 
 /* ---------- responsive design ---------- */
-@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+@media screen and (min-width: 1367px) {
+    .partner_item {
+        width: 10rem;
+        height: 14rem;
+    }
+    .partner_procent {
+        font-size: 32px;
+        font-weight: bold;
+        margin-left: -4rem;
+        margin-top: 0.5rem;
+    }
+    .partner_text {
+        font-size: 9px;
+    }
+    .partner_name {
+        font-size: 16px;
+    }
+    .partner_pic {
+        width: 80px;
+        height: 80px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (max-width: 1366px) and (orientation: landscape) {
     .partner_item {
         width: 10rem;
         height: 14rem;
@@ -44,7 +68,7 @@
     }
 }
 
-@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
     .partner_item {
         width: 7rem;
         height: 12rem;
@@ -69,7 +93,7 @@
     }
 }
 
-@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+@media screen and (max-width: 414px) and (orientation: portrait) {
     .partner_item {
         width: 8rem;
         height: 12rem;

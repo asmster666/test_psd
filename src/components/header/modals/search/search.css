@@ -15,6 +15,23 @@
 }
 
 /* ---------- responsive design ---------- */
+@media screen and (min-width: 1367px) {
+    .search_label {
+        margin-top: 4rem;
+        margin-left: 65%;
+        height: 2rem;
+        position: absolute;
+        z-index: 1;
+    }
+    .sign_search {
+        height: 1rem;
+        width: 1rem;
+        margin-top: 4.1rem;
+        position: absolute;
+        margin-left: 74%;
+        z-index: 2;
+    }
+}
 @media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
     .search_label {
         margin-top: 4rem;

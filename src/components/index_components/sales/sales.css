@@ -16,7 +16,19 @@ button {
 }
 
 /* ---------- responsive design ---------- */
-@media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
+@media screen and (min-width: 1367px) {
+    .sales_wrap {
+        width: 60%;
+        margin: 0 auto;
+    }
+    button {
+        width: 20%;
+        font-size: 25px;
+        margin-top: 3rem;
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 1366px) and (orientation: landscape) {
     .sales_wrap {
         width: 60%;
         margin: 0 auto;
@@ -29,7 +41,7 @@ button {
     }
 }
 
-@media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
     .sales_wrap {
         margin: 0 auto;
     }
@@ -41,7 +53,7 @@ button {
     }
 }
 
-@media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
+@media screen and (max-width: 414px) and (orientation: portrait) {
     .sales_wrap {
         flex-direction: column;
         margin: 0 auto;

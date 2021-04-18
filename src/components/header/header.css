@@ -84,9 +84,67 @@
 }
 
 /* ---------- responsive design ---------- */
+@media screen and (min-width: 1367px) {
+    .header {
+        width: auto;
+        height: 7rem;
+    }
+    #img {
+        width: 130px;
+        height: 73px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .links_none { 
+        display: none
+    }
+    .links {
+        font-size: 21px;
+        width: 55%;
+    }
+    .links_up {
+        margin-top: 0.8rem;
+    }
+    .links_up a {
+        margin-right: 0.3rem;
+    }
+    .links_down_wrap {
+        margin-bottom: 1.5rem; 
+        margin-left: -3rem;
+    }
+    .right {
+        width: 27%;
+    }
+    .left {
+        width: 20%;
+    }
+    .location {
+        margin-top: 1rem;
+    }
+    .location span {
+        margin-left: 1.5rem;
+        font-size: 20px;
+    }
+    .geo {
+        width: 20px;
+        height: 20px;
+    }
+    .search {
+        margin-bottom: 1rem; 
+        height: 20px;
+    }
+    .search button {
+        font-size: 16px;
+        margin-top: -0.2rem;
+    }
+    .search_icon {
+        width: 20px;
+        height: 20px;
+    }
+}
 @media screen and (max-width: 1366px) and (max-height: 768px) and (orientation: landscape) {
     .header {
-        width: 1366px;
+        width: 100%;
         height: 7rem;
     }
     #img {
@@ -142,7 +200,7 @@
 
 @media screen and (max-width: 768px) and (max-height: 1024px) and (orientation: portrait) {
     .header {
-        width: 768px;
+        width: 100%;
         height: 5rem;
     }
     #img {
@@ -200,7 +258,7 @@
 
 @media screen and (max-width: 414px) and (max-height: 736px) and (orientation: portrait) {
     .header {
-        width: 414px;
+        width: 100%;
         height: 5rem;
     }
     #img {

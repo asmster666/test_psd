@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
 import {ActionPage, IndexPage} from '../../pages';
 
 export default class App extends Component {
@@ -8,9 +8,9 @@ export default class App extends Component {
             <Router>
                 <section className="app">
                     <Switch>
-                        <Route path="/" exact component={IndexPage}></Route>
-                        <Route path="/action" exact component={ActionPage}></Route>
-                    </Switch>
+                        <Route to="/action" component={IndexPage} />
+                        <Route to="/" component={ActionPage} />
+                    </Switch>   
                 </section>
             </Router>
         )
